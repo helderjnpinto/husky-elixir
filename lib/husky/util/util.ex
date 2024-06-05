@@ -95,7 +95,7 @@ defmodule Husky.Util do
     Application.get_env(
       :husky,
       :escript_path,
-      "deps/#{Mix.Project.config()[:app]}/#{Mix.Project.config()[:escript][:path]}"
+      "deps/husky/priv/husky"
     )
   end
 
