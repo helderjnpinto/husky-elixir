@@ -34,6 +34,9 @@ defmodule Husky.Script do
 
     if [ \"${HUSKY_DEBUG}\" = \"true\" ]; then
       echo \"husky:debug $HOOK_NAME hook started...\"
+      echo \"husky:debug SCRIPT_PATH: $SCRIPT_PATH \"
+      echo \"husky:debug HOOK_NAME: $HOOK_NAME \"
+      echo \"husky:debug GIT_PARAMS: $GIT_PARAMS \"
     fi
 
     if [ -f $SCRIPT_PATH ]; then
